@@ -103,6 +103,7 @@
             Controls.Add(password_textbox);
             Controls.Add(username_textbox);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();

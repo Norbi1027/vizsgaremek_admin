@@ -36,7 +36,7 @@ namespace vizsgaremek
                         Dashboard dsb = new Dashboard();
                         Form1 form1 = new Form1();
                         dsb.Show();
-                        form1.Close();
+                        this.Hide();
                         MessageBox.Show("Belépés sikeres!");
                         break;
                     }

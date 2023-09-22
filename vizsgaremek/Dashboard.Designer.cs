@@ -43,6 +43,8 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            clear_btn = new Button();
+            log_out_btn = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -98,7 +100,7 @@
             // 
             // insert_btn
             // 
-            insert_btn.Location = new Point(249, 385);
+            insert_btn.Location = new Point(170, 369);
             insert_btn.Name = "insert_btn";
             insert_btn.Size = new Size(75, 23);
             insert_btn.TabIndex = 10;
@@ -108,40 +110,43 @@
             // 
             // update_brn
             // 
-            update_brn.Location = new Point(330, 385);
+            update_brn.Location = new Point(251, 369);
             update_brn.Name = "update_brn";
             update_brn.Size = new Size(75, 23);
             update_brn.TabIndex = 11;
-            update_brn.Text = "update";
+            update_brn.Text = "Update";
             update_brn.UseVisualStyleBackColor = true;
             update_brn.Click += update_brn_Click;
             // 
             // delete_btn
             // 
-            delete_btn.Location = new Point(411, 385);
+            delete_btn.Location = new Point(332, 369);
             delete_btn.Name = "delete_btn";
             delete_btn.Size = new Size(75, 23);
             delete_btn.TabIndex = 12;
-            delete_btn.Text = "delete";
+            delete_btn.Text = "Delete";
             delete_btn.UseVisualStyleBackColor = true;
             delete_btn.Click += delete_btn_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.Menu;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(168, 429);
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = SystemColors.Menu;
+            dataGridView1.Location = new Point(69, 398);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(424, 150);
+            dataGridView1.Size = new Size(659, 180);
             dataGridView1.TabIndex = 13;
             // 
             // search_btn
             // 
-            search_btn.Location = new Point(492, 385);
+            search_btn.Location = new Point(413, 369);
             search_btn.Name = "search_btn";
             search_btn.Size = new Size(75, 23);
             search_btn.TabIndex = 14;
-            search_btn.Text = "search";
+            search_btn.Text = "Search";
             search_btn.UseVisualStyleBackColor = true;
             search_btn.Click += search_btn_Click;
             // 
@@ -185,11 +190,33 @@
             label5.TabIndex = 18;
             label5.Text = "Összeg:";
             // 
+            // clear_btn
+            // 
+            clear_btn.Location = new Point(494, 369);
+            clear_btn.Name = "clear_btn";
+            clear_btn.Size = new Size(75, 23);
+            clear_btn.TabIndex = 19;
+            clear_btn.Text = "Clear";
+            clear_btn.UseVisualStyleBackColor = true;
+            clear_btn.Click += clear_btn_Click;
+            // 
+            // log_out_btn
+            // 
+            log_out_btn.Location = new Point(12, 12);
+            log_out_btn.Name = "log_out_btn";
+            log_out_btn.Size = new Size(75, 23);
+            log_out_btn.TabIndex = 20;
+            log_out_btn.Text = "Log Out";
+            log_out_btn.UseVisualStyleBackColor = true;
+            log_out_btn.Click += log_out_btn_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 605);
+            Controls.Add(log_out_btn);
+            Controls.Add(clear_btn);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -206,6 +233,7 @@
             Controls.Add(user_id_tb);
             Controls.Add(rendeles_id_tb);
             Name = "Dashboard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -229,5 +257,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Button clear_btn;
+        private Button log_out_btn;
     }
 }
