@@ -45,6 +45,7 @@
             label5 = new Label();
             clear_btn = new Button();
             log_out_btn = new Button();
+            exit_btn = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -131,6 +132,7 @@
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.Menu;
+            dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = SystemColors.Menu;
@@ -210,11 +212,22 @@
             log_out_btn.UseVisualStyleBackColor = true;
             log_out_btn.Click += log_out_btn_Click;
             // 
+            // exit_btn
+            // 
+            exit_btn.Location = new Point(713, 12);
+            exit_btn.Name = "exit_btn";
+            exit_btn.Size = new Size(75, 23);
+            exit_btn.TabIndex = 21;
+            exit_btn.Text = "EXIT";
+            exit_btn.UseVisualStyleBackColor = true;
+            exit_btn.Click += exit_btn_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 605);
+            Controls.Add(exit_btn);
             Controls.Add(log_out_btn);
             Controls.Add(clear_btn);
             Controls.Add(label5);
@@ -259,5 +272,6 @@
         private Label label5;
         private Button clear_btn;
         private Button log_out_btn;
+        private Button exit_btn;
     }
 }
